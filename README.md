@@ -1,3 +1,14 @@
+The MovieDB Project is a web application that allows users to explore a vast collection of movies, view details about each movie, and even rate their favorite films. It leverages The Movie Database (TMDb) API to provide up-to-date information on movies, including popular and top-rated titles.
+
+Features
+Popular Movies: Browse a list of currently popular movies, complete with posters and brief descriptions.
+
+Top-Rated Movies: Discover the highest-rated movies based on user ratings and reviews.
+
+User Ratings: Registered users can rate movies and see their own ratings displayed alongside movie details.
+
+Guest Session Support: Non-registered users can also participate by using a guest session to rate movies
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
