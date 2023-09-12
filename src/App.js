@@ -17,26 +17,31 @@ function App() {
 
   return (
     <Router>
-      <div className="App">
-        <nav>
-          <ul>
-            <li>
-              <Link to="/popular">Popular Movies</Link>
-            </li>
-            <li>
-              <Link to="/top-rated">Top Rated Movies</Link>
-            </li>
-          </ul>
-        </nav>
-        
-        {/* Use Routes container to wrap your Route components */}
-        <Routes>
-          <Route path="/popular" element={<PopularMovies guestToken={guestToken} />} />
-          <Route path="/top-rated" element={<TopRatedMovies guestToken={guestToken} />} />
-        </Routes>
-      </div>
+
+<nav className="navbar">
+  <ul>
+    <li>
+      <Link to="/popular">Popular Movies</Link>
+    </li>
+    <li>
+      <Link to="/top-rated">Top Rated Movies</Link>
+    </li>
+  </ul>
+</nav>
+
+<div className="movie-list">
+  {/* Render the movie components here */}
+  <Routes>
+  <Route path="/popular" element={<PopularMovies guestToken={guestToken} />} />
+  <Route path="/top-rated" element={<TopRatedMovies guestToken={guestToken} />} />
+  </Routes>
+</div>
+      
     </Router>
   );
 }
 
 export default App;
+
+
+
